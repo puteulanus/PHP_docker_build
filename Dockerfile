@@ -1,4 +1,4 @@
-FROM tutum/centos:6.5
+FROM tutum/centos:centos6
 MAINTAINER Puteulanus <ex@mple.com>
 RUN yum update -y
 ADD php.sh /root/php.sh
