@@ -1,6 +1,6 @@
 #!/bin/bash
 # 设定
-url="debug.puteulanus.com"
+url="test.puteulanus.com"
 # 安装MariaDB
 cat << _EOF_ >/etc/yum.repos.d/MariaDB.repo
 [mariadb]
