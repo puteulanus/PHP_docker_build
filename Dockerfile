@@ -25,4 +25,4 @@ EXPOSE 80
 EXPOSE 443
 
 # RUN
-CMD ["supervisord", "-c", "/etc/supervisor/supervisord.conf"]
+CMD ["supervisord", "-c", "/etc/supervisord.conf"]
