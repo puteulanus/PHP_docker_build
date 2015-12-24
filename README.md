@@ -1,2 +1,4 @@
 # PHP_docker_build
-用于构建PHP的远程调试docker镜像
+[![Docker Repository on Quay](https://quay.io/repository/puteulanus/lnmp/status "Docker Repository on Quay")](https://quay.io/repository/puteulanus/lnmp)
+
+用于构建LNMP环境的docker镜像
