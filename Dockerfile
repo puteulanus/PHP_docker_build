@@ -1,4 +1,4 @@
-FROM centos:centos6
+FROM centos:centos7
 
 # Add scripts
 ADD script /tmp/script
