@@ -25,5 +25,4 @@ EXPOSE 80
 EXPOSE 443
 
 # RUN
-CMD sleep 10000
-#CMD ["supervisord", "-c", "/etc/supervisord.conf"]
+CMD ["supervisord", "-nc", "/etc/supervisord.conf"]

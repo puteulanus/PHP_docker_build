@@ -7,6 +7,7 @@ easy_install supervisor
 # Configure
 mkdir /etc/supervisord.d
 echo_supervisord_conf > /etc/supervisord.conf
+echo '[include]' >> /etc/supervisord.conf
 echo 'files = supervisord.d/*.ini' >> /etc/supervisord.conf
 
 cat << _EOF_ >"/etc/supervisord.d/nginx-php.ini"
