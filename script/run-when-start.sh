@@ -6,6 +6,12 @@ easy_install supervisor
 
 # Configure
 mkdir -p /var/log/mysql
+chown -R mysql /var/log/mysql
+chmod -R u+rw /var/log/mysql
+mkdir -p /var/run/mysqld
+chown -R mysql /var/run/mysqld
+chmod -R u+rw /var/run/mysqld
+
 mkdir /etc/supervisord.d
 echo_supervisord_conf > /etc/supervisord.conf
 echo '[include]' >> /etc/supervisord.conf
