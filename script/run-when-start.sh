@@ -20,16 +20,16 @@ echo 'files = supervisord.d/*.ini' >> /etc/supervisord.conf
 cat << _EOF_ >"/etc/supervisord.d/nginx-php.ini"
 [program:php-fpm]
 command=/usr/sbin/php-fpm -c /etc/php-fpm.conf
-autoresart = true
+autorestart = true
 
 [program:nginx]
 command=/usr/sbin/nginx -g "daemon off;"
-autoresart = true
+autorestart = true
 _EOF_
 
 cat << _EOF_ >"/etc/supervisord.d/mysql.ini"
 [program:mysqld]
 command=/usr/bin/pidproxy /var/run/mysqld/mysqld.pid /usr/bin/mysqld_safe --basedir=/usr --datadir=/var/lib/mysql --plugin-dir=/usr/lib/mysql/plugin --log-error=/var/log/mysql/error.log --socket=/var/run/mysqld/mysqld.sock --port=3306
 user=mysql
-autoresart = true
+autorestart = true
 _EOF_
