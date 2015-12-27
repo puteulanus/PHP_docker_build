@@ -18,6 +18,9 @@ RUN bash /tmp/script/nginx-install.sh
 # Setup Startup
 RUN bash /tmp/script/run-when-start.sh
 
+# Install Useful tools
+RUN yum install -y wget tar unzip
+
 # Expose Volumes
 
 # Expose Ports
